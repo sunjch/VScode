@@ -1,0 +1,9 @@
+https://blog.csdn.net/weixin_46535880/article/details/119155123
+
+1. 在git网站上新建远程repository
+
+2. 打开对应的本地文件目录
+
+3. 右键选择 Git Bash Here 输入指令 git init 创建本地仓库
+
+4.
