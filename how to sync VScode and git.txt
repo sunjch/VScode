@@ -1,9 +1,54 @@
 https://blog.csdn.net/weixin_46535880/article/details/119155123
 
+
+git推送本地代码至远程仓库
+
 1. 在git网站上新建远程repository
 
 2. 打开对应的本地文件目录
 
 3. 右键选择 Git Bash Here 输入指令 git init 创建本地仓库
 
-4.
+4. 输入指令 git add . 将代码提交至暂存区(git add . 默认将所有文件提交至本地仓库)
+
+5. 输入指令 git commit -m’提交说明备注’ 将暂存区代码提交至本地仓库
+
+6. 输入指令 git remote add origin https://github.com/sunjch/VScode.git 绑定远程仓库
+
+7. 输入指令 git push -u origin master 将本地仓库推送至远程仓库
+
+git克隆远程仓库代码到本地
+
+1. 打开需要克隆到的目标文件目录，右键选择Git Bash Here
+2. 输入指令 git clone https://github.com/sunjch/VScode.git
+3. 用vscode打开文件目录
+4. 切换当前分支
+   默认情况下打开默认的分支为master分支，但一般情况下，实际开发是不允许直接在master分支上进行操作的，所以需要新建分支并切换
+
+VS Code推送代码至远程仓库
+1. 点击选择Git工作区
+2. 选择Changes > Stages All Changes将文件添加至暂存区
+3. 选择Commit > Commit All 将暂存区文件提交至本地仓库
+4. 选择push将本地仓库推送至远程仓库
+   意：第一次push可能会出现提示远程仓库没有对应的分支(因为在本地新建了分支)直接选择ok即可
+5. push完成之后就可以在远程仓库对应的分支下看到提交的内容了，但需要注意的是master当前并没有发生改变，需要进行分支合并才可以在   master分支中看到提交的内容
+
+五、Gitee合并分支
+1. 选择需要与master合并的分支，点击Pull Request
+2. 设置相关的信息，然后选择创建
+3. 通过审查和测试
+4. 合并分支
+
+VS Code拉取远程仓库代码
+1. 选择Pull,Push>Pull from
+2. 选择pull的仓库地址
+3. 选择pull的分支
+
+VS Code解决Push冲突
+当不同的用户修改了同一个文件的同一行，再进行push时就会冲突，此时需要手动告诉git到底要保留哪一个修改来解决冲突
+1. 先pull拉取代码
+2. 手动选择需要保留的更改(将需保留的代码留下，其余删除即可)
+3. 再次Push操作即可
+① 选择Changes > Stages All Changes 将文件添加至暂存区
+② 选择Commit > Commit All 将暂存区文件提交至本地仓库
+③ 选择push 将本地仓库推送至远程仓库
