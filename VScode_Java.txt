@@ -1,0 +1,15 @@
+1. To help you set up quickly, you can install the Coding Pack for Java, which includes VS Code.
+
+2. Installing extensions
+If you are an existing VS Code user, you can also add Java support by installing the Extension Pack for Java, which includes these extensions:
+
+Language Support for Java™ by Red Hat
+Debugger for Java
+Test Runner for Java
+Maven for Java
+Project Manager for Java
+Visual Studio IntelliCode
+
+3. Create a folder for your Java program and open the folder with VS Code. Then in VS Code, create a new file and save it with the name Hello.java
+
+4. To run and debug Java code, set a breakpoint, then either press F5 on your keyboard or use the Run > Start Debugging menu item.
